@@ -1,0 +1,9 @@
+/* Min första CSS-regel */
+body {
+  /* body är en selektor (väljare) */
+  color: red;
+  /* 
+        color är en egenskap
+        red är ett värde 
+  */
+}
