@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 4</title>
+    <style>
+    /* 
+    Arv-selektor = Arv-väljare (Descendant combinator) 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+    */
+    #demo-1 a{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border:1px solid black;
+        margin: 5px;
+    }
+    .demo-2 a{
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        background-color: black;
+        color:white;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .demo-3 p{
+        display: inline-block;
+        width: 200px; 
+        height: 200px;
+        border: 1px solid silver;
+        overflow: auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>Egenskapen Display</h1>
+    <h2>Ändra inline till block</h2>
+    <div id="demo-1">
+        <a href="#">Länk 1</a>
+        <a href="#">Länk 2</a>
+        <a href="#">Länk 3</a>
+    </div>
+
+    <h2>Ändra inline till inline-block</h2>
+    <div class="demo-2">
+        <a href="#">Länk 1</a>
+        <a href="#">Länk 2</a>
+        <a href="#">Länk 3</a>
+    </div>
+
+
+    <h2>Ändra block till inline-block</h2>
+    <div class="demo-3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quia!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, delectus!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, saepe.</p>
+    </div>
+
+    <hr>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti culpa, minima vitae itaque odio sequi eius obcaecati, animi expedita sint doloribus illo veniam officia nulla asperiores perferendis necessitatibus maxime debitis.</p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 2</title>
+    <style>
+
+    body{
+        background-image: url("https://picsum.photos/2000");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .image-circle{
+        border-radius: 50%;
+    }
+    .image-rounded{
+        border-radius: 0.25em;
+    }
+
+    .image-opacity-10{
+        opacity: 0.1; /* 10% opacitet */
+    }    
+    .image-opacity-50{
+        opacity: 0.5; /* 50% opacitet */
+    }    
+    .image-opacity-70{
+        opacity: 0.9; /* 90% opacitet */
+    }    
+    </style>
+</head>
+
+<body>
+    <h1>Bilder och bakgrundsbilder</h1>
+    <h2>Runda hörn</h2>
+    <img class="image-rounded" 
+         src="https://picsum.photos/100" 
+         alt="Dummy Image">
+    
+    <img class="image-circle" 
+         src="https://picsum.photos/100" 
+         alt="Dummy Image">
+    
+    <h2>Opacitet</h2>
+    <img class="image-circle image-opacity-10" 
+         src="https://picsum.photos/100" 
+         alt="Dummy Image">
+    <img class="image-circle image-opacity-50" 
+         src="https://picsum.photos/100" 
+         alt="Dummy Image">
+    <img class="image-circle image-opacity-90" 
+         src="https://picsum.photos/100" 
+         alt="Dummy Image">
+     
+</body>
+</html>

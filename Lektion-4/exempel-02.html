@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 2</title>
+    <style>
+    *{  /* En generell selektor för att jobba med 
+         DRY-principen = Don't repeat yourself
+         Egenskaper som skrivs här gäller överallt */
+        box-sizing: border-box;
+    }
+    div{  /* Boxmodellen */
+        height: 100px;
+        width: 450px;
+        margin: 10px;
+        padding: 10px;
+        border:2px solid black;
+        border-radius: 10px;  /* runda hörn */
+        background-color: gold;
+    }
+    span{
+        background-color: gold;
+    }
+    .text-first-word{
+        font-weight:bold;
+        color:white;
+        background-color:black;
+    }
+
+    /* Centera sidan
+      För att centrera ett block gör så här:
+      1. Ange bredden (viktigt)
+      2. Ange auto på margin (höger och vänster)   
+     */ 
+    .container{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border:1px solid black;
+        /* margin: 5px auto */
+        background-color: #aba;
+    }
+    </style>
+</head>
+
+<body class="container">
+    <h1>Boxmodellen</h1>
+    <h2>DIV och SPAN</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vero facilis repellat magnam voluptatem soluta iste modi corporis. Quaerat molestias fuga reiciendis nobis assumenda laborum doloremque expedita vitae, laudantium temporibus!</div>
+    <span>En span</span>
+    <hr>
+    <div><span class="text-first-word">Lorem<span> ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sit quas fuga molestias provident rerum sint quia ab a, excepturi dolorum ipsam explicabo voluptatum praesentium iste! Excepturi reprehenderit itaque saepe.</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 7</title>
+
+    <style>
+    .container{
+        display: flex;
+        flex-direction: row; /* defaultvärde */
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border: 1px dotted purple;
+    }
+
+    /* Formatera div-element som finns direkt under klassen container */
+    .container > div{
+        margin: 10px;
+        padding: 10px;
+        background-color: orange;
+        text-align: center;
+    }
+    
+    .item-1{
+        flex-grow: 1;  /* 1/4 */
+    }
+    .item-2{
+        flex-grow: 2;  /* 2/4 */
+    }
+    .item-3{
+        flex-grow: 1;  /* 1/4 */
+    }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+
+    <div class="container">
+        <div class="item-1">Item 1</div>
+        <div class="item-2">Item 2</div>
+        <div class="item-3">Item 3</div>
+
+    </div>
+
+    <h2>Rubrik</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellat quo alias dolorum. Nulla, voluptates amet hic adipisci ipsum ducimus dolore in cupiditate, vero repellendus inventore enim. Consequuntur, necessitatibus sequi.</p>
+
+</body>
+</html>
