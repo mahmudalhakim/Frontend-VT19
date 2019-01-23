@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <!-- OBS! Det är viktigt att lägga till metataggen viewport vid RWD -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 2</title>
+    <style>
+
+    /* Mobile First Design */
+    body{
+            background-color: #CCC;
+    }
+
+    /* Dölj annonsen på alla enheter */
+    .ad{
+        display: none;
+    }
+
+
+    /* CSS MQ Media Queries (Mediafrågor) */
+    /* 
+    Vid brytpunkten 375px gör detta
+    När webbläsarens bredd är minst 300px
+    */
+   
+   /* iPhone 6/7/8 */
+    @media(min-width:375px){
+        body{
+            background-color: #c0ffe57e;
+            font-size: 15px;
+        }
+    }
+    
+    /* iPhone 6/7/8 Plus */
+    @media(min-width:414px){
+        body{
+            background-color: #9669ff5d;
+        }
+    }
+
+    /* iPad */
+    @media(min-width:768px){
+        body{
+            background-color: #ee82ee31;
+            font-size: 20px;
+        }
+    }
+
+    /* iPad Pro */
+    @media(min-width:1024px){
+        body{
+            background-color: #FFF;
+            font-size: 30px;
+        }
+
+        /* Visa annonsen på iPad Pro och större enheter */
+        .ad{
+            display: block;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Responsiv Webdesign RWD</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, debitis vel mollitia quam, dicta obcaecati consequatur ut sed ratione a quis! Quibusdam, tenetur amet. Adipisci qui saepe nobis veniam sint.</p>
+    <div class="ad">
+        <h2>Annons</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, autem. Esse fuga laborum obcaecati quod quas inventore doloremque mollitia facilis, saepe accusantium eveniet necessitatibus, porro itaque alias at atque officia.</p>
+        <img src="http://picsum.photos/1024/300" alt="AD">
+    </div>
+</body>
+</html>
