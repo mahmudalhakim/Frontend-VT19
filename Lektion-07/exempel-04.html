@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 4</title>
+</head>
+<body>
+    <h1>Variabler</h1>
+    <h2 id="fname"></h2>
+    <script>
+    // Deklarera en variabel
+    let firstName;
+    console.log(firstName); // undefined
+
+    // Tilldelning
+    firstName = 'Mahmud';
+    console.log(firstName); 
+
+    // Fråga: Hur visar vi firstName på webbsidan
+    // 1. Ett snabbt sätt som används vid testning
+    document.write(firstName);
+    // 2. Skapa en platshållare (se rad 11) och referera till den
+    let el = document.getElementById("fname");
+    // 2.1 Ändra innehållet med innerHTML
+    el.innerHTML = firstName;
+    // Eller på en och samma rad så här...
+    document.getElementById('fname').innerHTML = firstName;
+
+
+    // Initiering
+    let age = 45;
+
+    // Skapa flera variabler
+    let tel, mobile;
+    tel = '08-1234567';
+    mobile = '076-123456';
+
+    // Alternativ syntax
+    let myFirstName = "Mahmud",
+        myLastName  = "Al Hakim",
+        myAge = 45,
+        myTel = "08-1234567",
+        myMobile = '076-123456';
+
+    let $ = "Dollar";      // OK. Används i jQuery
+    let _ = "Understreck"; // OK
+
+    // let first-name; // Fel: Unexpected token
+    // Minustecken använs enbart vid matematiska operationer
+
+    // let first.name; // Fel: Unexpected token
+    // Punkt används i JS för att komma åt
+    // egenskaper och metoder i objekt
+
+    // let 123; // Unexpected number
+    // Vi får inte påbörja variabelnamn med siffror
+    // Variabelnamn får innehålla siffor
+    let x1;
+    let x2;
+
+    console.log(i); // Uncaught ReferenceError: i is not defined
+
+    // OBS! Vi får inte använda reserverade ord
+    // https://www.w3schools.com/js/js_reserved.asp
+    // let for; // Uncaught SyntaxError: Unexpected token for
+
+    // Var extra förskiktig med inbyggda objekt
+    // let console = "HEJ"; // FEL
+
+    </script>
+    
+</body>
+</html>

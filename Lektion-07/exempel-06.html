@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 6</title>
+</head>
+<body>
+    <h1>Summa av två tal</h1>
+    
+
+    <script>
+
+    let tal1 = prompt("Ange tal 1:");
+    let tal2 = prompt("Ange tal 2:");
+    
+    console.log(tal1);
+    console.log(tal2);
+    // OBS! prompt returnerar alltid sträng (typen string)
+   
+    let summa = tal1 + tal2;  // strängkonkatenering 
+    console.log("Summa för konvertering = " + summa); 
+    // tal1+tal2 som sträng t.ex.
+    // 10 + 20 = 1020
+
+    // Konvertera typen string till number
+    summa = Number(tal1) +  Number(tal2);
+    console.log("Summa efter konvertering = " + summa); 
+
+
+    </script>
+</body>
+</html>

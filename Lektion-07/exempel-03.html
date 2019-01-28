@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 3</title>
+</head>
+<body>
+    <h1>Objektet document</h1>
+    
+    <h2>Metoden write()</h2>   
+    <script>       
+      document.write("Hello from document.write!");
+    </script>
+
+    <h2>Metoden getElementById()</h2>
+    <div id="demo"></div>
+    <script>
+        let divEl = document.getElementById('demo');
+        console.log(divEl);
+        
+        // OBS! div är en referens till ett element
+        // Egenskaperna nedan finns i objektet "Element"
+        // https://www.w3schools.com/jsref/dom_obj_all.asp
+
+        // Egenskapen innerHTML
+        divEl.innerHTML = '<h2>Demo på egenskapen innerHTML</h2>';
+
+        // Egenskapen textContent
+        divEl.textContent = 'Demo på egenskapen textContent';
+        // Lägg till innehåll
+        divEl.textContent += 'Demo 2  på egenskapen textContent';
+        // textContent renderar inte HTML-kod.
+
+        // Metoden innerText och backticks
+        divEl.innerText += `
+            <h2>DEMO</h2> 
+            <h3>Rubrik</h3>
+        ` ;
+
+    </script>
+
+    
+</body>
+</html>

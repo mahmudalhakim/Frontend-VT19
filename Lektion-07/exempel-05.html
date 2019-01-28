@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 5</title>
+</head>
+<body>
+    <h1>Prompt</h1>
+    <h2 id="demo"></h2>
+
+    <script>
+    let person = prompt("Vad heter du?");
+    
+    console.log(person);
+    
+    alert("Hej " + person);
+
+    // Övning: visa välkomstmeddelande på sidan
+    // Metod 1: använd write() - Rekommenderas inte!
+    document.write("<h2>Hej " + person + "</h2>");
+
+    // Metod 2: använd getElementById() och innerHTML
+    document.getElementById('demo').innerHTML = "Hello " + person;
+
+    </script>
+</body>
+</html>

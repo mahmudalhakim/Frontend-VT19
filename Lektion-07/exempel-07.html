@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 7</title>
+</head>
+<body>
+    <h1>Array / fält / vektor / lista</h1>
+    
+    <script>
+
+        // Skapa en array
+        // 1. Array Literal 
+        let cars = ['Saab' , 'Volvo' , 'BMW'];
+        //            0         1        2
+        console.log(cars);
+
+        // 2. Array Constructor
+        let persons = new Array('Mahmud', 'Kalle', 'Adam');
+        console.log(persons);
+
+        // Indexering
+        // Skriv ut den första bilen
+        console.log(cars[0]);
+
+        console.log(cars[10]); // undefined
+
+        // Ändra ett element
+        cars[0] = "Opel";
+        console.log(cars);
+
+        // Antal element - egenskapen length
+        console.log("Antal personer: " + persons.length);
+
+        // Skriv ut den sista bilen
+        console.log(cars[cars.length-1]);
+
+        // Sortera en array
+        persons.sort();
+        console.log("Efter sortering: ");
+        console.log(persons);
+
+    </script>
+
+
+</script>
+</body>
+</html>
