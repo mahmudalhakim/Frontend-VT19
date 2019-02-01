@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 2</title>
+</head>
+<body onload="alert('Hello Events')">
+
+    <h1>Exempel 2</h1>
+    <h2>Arbeta med JS Events</h2>
+
+    <button onclick="document.body.bgColor='red'">Red</button>
+    <button onclick="document.body.bgColor='green'">Green</button>
+    <button onclick="document.body.bgColor='blue'">Blue</button>
+
+    <hr>
+
+    <button onclick="myFunction()">Klicka här</button>
+    <h2 onclick="hide()" id="demo"></h2>
+
+    <p onmouseover="changeColor(this , 'green')"
+    onmouseout="changeColor(this , 'blue')">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime modi eius delectus magnam at, impedit sequi accusamus amet iste nulla officia fuga quaerat quidem consequatur similique saepe architecto voluptatum mollitia!</p>
+
+    <script>
+
+    let demo =  document.getElementById('demo');
+
+    function myFunction(){
+        demo.innerHTML = 'Hello Events';
+    }
+
+    function hide(){
+        demo.innerHTML = '';
+
+        // eller
+        // demo.style.display = 'none'; 
+        // OBS! h2 döljs för evigt!
+
+    }
+
+    function changeColor(element){
+        console.log(element);
+        element.style.color = 'green';
+    }
+    </script>
+
+
+</body>
+</html>
